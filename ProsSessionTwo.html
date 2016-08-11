@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	        <title>CODE FIRST: GIRLS Session 2</title>
+
+	           <!-- Custom CSS -->
+			<link href="css/homepage.css" rel="stylesheet">
+        	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        	<link href='https://fonts.googleapis.com/css?family=Poppins:600' rel='stylesheet' type='text/css'>
+    </head>
+
+<body>
+
+<!-- Intro -->
+
+<div class="class-page-block">
+<div class="class-header">
+		<h1>Session 2: CSS Basics</h1> 
+	</div>
+</div>
+
+<div class="class-page-block">
+	<div class="recap">
+		<h2>Recap</h2>
+			<ul id="class_list">
+				<li>A Website is just a collection of files: HTML, CSS & Javascript</li>
+				<li>We can edit these files locally.</li>
+				<li>We can create them locally (using a text editor) and view then in a browser.</li>
+			</ul>
+	</div>
+	</div>
+</div>
+
+<div class="class-page-block">
+		<div class="task">
+			<h2><span>Task:</span></h2>
+				<ol>
+					<li><span>Go to the github repository for this session: <a href=https://github.com/CodeFirstGirls/html2>https://github.com/CodeFirstGirls/html2</a></span></li>
+					<li><span>Download the code into your coding_course folder (by clicking 'Download ZIP' in the bottom right).</span></li>
+				</ol>		
+		</div>	
+	</div>
+</div>
+
+<br>
+
+<div class="class-page-block">
+	<div class="whats-css">
+		<h2>What is CSS?</h2>
+		<p>CSS (Cascading Style Sheets) was created by the World Wide Web Consortium (W3C) to solve to problem of formatting and styling a document. This allows HTML to do its job - defining the content of a document.</p>
+		<br>
+		<p>A powerful example of this is <a href=http://www.csszengarden.com/>CSS Zen Garden</a> - by clicking on the links you completely change how the site looks, but the HTML remains unchanged.</p>
+	</div>
+	</div>
+</div>
+
+<br>
+
+<div class="class-page-block">
+		<h2>Linking your CSS and HTML code</h2>
+		<p>There are a few ways to include CSS in an HTML file:</p>
+			<ol>
+				<li>Put the css inline in the html.</li>
+				<li>Put the css in a &lt;style&gt;..&lt;/style&gt; section in the &lt;head&gt;</li>	
+				<li>Link to a separate .css file in the	&lt;head&gt;</li>	
+			</ol>
+
+		<p>The first way is sometimes useful, but defeats the point of using CSS to separate presentation and information. The second way is a bit better, but is strictly something you should never do in a professional website. The third way is the best, and we&apos;ll bedoing this.</p>
+	</div>
+</div>
+
+
+<div class="class-page-block">
+		<h2>Link to a separate CSS file in the &lt;head&gt;</h2>
+		<p>By separating these CSS rules into their own file you:</p>
+		<p> (a) reduce repetition in your code and (b) reduce the amount of information that has to be sent to the browser for each page - if the CSS file applies to the whole site, it only needs to be sent to the visitor once.</p>
+		<p>To link to an external CSS file you can do the following:</p>
+
+		<div class="class-example">
+			<div class=tab1><p>&lt;!DOCTYPE html&gt;</p></div>
+			<div class=tab1><p>&lt;html&gt;</p></div>
+			<div class=tab2><p>&lt;head&gt;</p></div>
+			<div class=tab3><p>&lt;title&gt; My Page &lt;title&gt;</p></div>
+			<div class=tab3><p>&lt;link	rel='stylesheet' type='text/css' href= 'exercise1.css'&gt;</p></div>
+			<div class=tab2><p>&lt;/head&gt;</p></div>
+			<div class=tab2><p>&lt; !-- body goes here -- &gt;</p></div>		
+			<div class=tab1><p>&lt;/html&gt;</p></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="class-page-block">
+		<h2>More about the HTML &lt;link&gt; Tag</h2>
+		<p>Linking to other files (stylesheets, javascript files, images) can be done in several ways, just like linking to another page. Say you have the following directory structure:</p>
+
+		<div class="class-example">
+			<div class="tab1"><p>first site</p></div>
+			<div class="tab1"><p>---- index.html</p></div>
+			<div class="tab1"><p>---- images</p></div>
+			<div class="tab1"><p>|     ---- background.jpg</p></div>
+			<div class="tab1"><p>---- stylesheets</p></div>
+			<div class="tab1"><p>---- images</p></div>
+			<div class="tab1"><p>|     ---- main.css</p></div>
+		</div>
+		
+		<p>You're going to deploy your site to "http://www.my_first_site.com". Suppose you want to link to main.css from index.html and to background.jpg from main.css. There are three different styles of links you can use:</p>
+	</div>
+</div>
+
+<div class="class-page-block">
+		<h2><em>1. Absolute links</em></h2>
+		<p>Absolute external links include the complete url to the resource you're linking to. <strong>Absolute links start with either http:// or https://.</strong></p>
+
+		<div class="class-example">
+			<div class="tab1"><p>&lt;!-- in index.html --&gt;</p></div>
+			<div class="tab2"><p>&lt;link rel='stylesheet' type='text/css' href= "http://www.mysite.com/stylesheets/main.css"&gt;</p></div>
+			<div class="tab1"><p>/* in main.css */</p></div>
+			<div class="tab1"><p>body  {</p></div>
+			<div class="tab2"><p>	background-image: url ("http://www.my_site.com/images/background.jpg");</p></div>	
+			<div class="tab1"><p>}</p></div>
+		</div>
+
+		<p>Absolute external links can be used to link to resources held on different sites, but wouldn&apos;t usually be used for links within your own site.</p>
+		<p>They&apos;re a bit fragile - if you change your domain name all the links will break. They also won&apos;t work when you&apos;re developing locally.</p>
+	</div>
+</div>
+
+<br>
+
+<div class="class-page-block">
+		<h2><em>2. Root-relative links</em></h2>
+		<p>Root-relative links contain the path to the resource relative to the site&apos;s root. The site&apos;s root is (roughly) the folder that contains the site - in this case, <strong>first-site</strong> root-relative links begin with a /: 
+
+		<div class="class-example">
+			<div class="tab1"><p>&lt;!-- in index.html --&gt;</p></div>
+			<div class="tab2"><p>&lt;link	rel='stylesheet' type='text/css' href= "/stylesheets/main.css"&gt;</p></div>
+			<div class="tab1"><p>/* in main.css */</p></div>
+			<div class="tab1"><p>body  {</p></div>
+			<div class="tab2"><p>	background-image: url ("/images/background.jpg");</p></div>	
+			<div class="tab1"><p>}</p></div>
+		</div>
+
+		<p>Root-relative links are a bit more flexible than absolute external links: e.g. if you change your domain name everything will still be fine. They&apos;re sometimes useful for your own static sites, but probably won&apos;t work when developing locally (because the root will be taken to be the root of your file system and not the folder containing the site!).</p>
+	</div>
+</div>
+
+
+<div class="class-page-block">
+		<h2><em>3. Document-relative links</em></h2>
+		<p>Document-relative links contain the path to the resource relative to the file where the link is written. Document-relative links don&apos;t begin with /:
+
+		<div class="class-example">
+			<div class="tab1"><p>&lt;!-- in index.html --&gt;</p></div>
+			<div class="tab2"><p>&lt;link rel='stylesheet' type='text/css' href= "../stylesheets/main.css"&gt;</p></div>
+			<div class="tab1"><p>/* in main.css */</p></div>
+			<div class="tab1"><p>body  {</p></div>
+			<div class="tab2"><p>	background-image: url ("../images/background.jpg");</p>	</div>	
+			<div class="tab1"><p>}</p></div>
+		</div>
+
+		<p>To link to the stylesheet from  index.html  we use  stylesheets/main.css  which says &quot;look in the same folder I&apos;m in ( first_site ) and find a folder called styleheets  and a file in it called main.css&quot;.</p>
+		<p>To link to the image from the stylesheet is slightly more complicated: we use  ../images/background.jpg.  This means &quot;go to the folder above the one I&apos;m in (I&apos;m in  stylesheets , so that&apos;s first_site)  and find a folder called  images  and a file in it called  background.jpg&quot;.</p>
+</div>
+
+<br>
+
+<div class="class-page-block">
+	<h2>Important to know</h2>
+	<p>In document-relative links (and in many other places e.g. command line navigation):<p>
+	<ul>
+		<li>. means in the folder <em>that I&apos;m in</em></li>
+		<li>.. means in the folder <em>above the one that I&apos;m in</em></li>
+	</ul>
+	<p>Relative links are the most flexible - they will work on your local file system. The only think you have to be careful about is moving your files into different folders, which can cause links to break.</p>
+	<p><strong>You should be using relative local links in these exercises.</strong></p>
+</div>
+
+</body>
+</html>

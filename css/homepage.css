@@ -1,0 +1,348 @@
+
+    /* Typography */
+
+    h1, h2, h3, h4 {
+        font-family: 'Poppins', sans-serif;
+        color: #F64C3F;
+        line-height: 150%;
+        max-width: 600px;
+    }
+
+    h1 {        
+        font-size: 45px;   
+    	}
+
+    h2 {
+        font-size: 40px;
+        padding-bottom: 20px;
+        }
+
+    h3 {
+        font-size: 30px; 
+        }
+
+    h4 {
+        font-size: 10px;
+        }
+
+    p {
+        font-family: 'Inconsolata';
+        color: #F64C3F;
+        line-height: 150%;
+        font-size: 18px;
+        }
+
+
+
+    ul {-webkit-padding-start: 0px;} 
+
+
+    ul li {
+        color: #F64C3F;
+        font-size: 18px;
+        line-height: 200%;
+        font-family: 'Inconsolata';
+        list-style-type: none;
+    } 
+
+    ol li {
+        color: #F64C3F;
+        font-size: 18px;
+        line-height: 200%;
+        font-family: 'Inconsolata';
+    }
+
+
+    ol span {
+        color: #FFFFFF;
+        background-color: #F64C3F;
+    }
+
+
+/* Nav */
+
+    body {
+      padding-top: 70px;
+      background-color: #ffffff;
+    }
+
+    .theme-dropdown .dropdown-menu {
+      position: static;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .theme-showcase > p > .btn {
+      margin: 5px 0;
+    }
+
+    .theme-showcase .navbar .container {
+      width: auto;
+    }
+
+    .navbar-inverse {
+      background: #ffffff !important; 
+      border: 0 !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      padding: 10px;
+    }
+
+    .navbar-inverse .navbar-brand {
+        color: #F64C3F;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: none;
+        }
+
+    .navbar-brand>a {
+        color: #212121;
+        }
+
+    .navbar-branda:hover {
+        color: #212121;
+        }
+
+
+    .navbar-toggle:hover {
+        color: #212121;
+        }
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: #F64C3F;
+        left: 0px;
+        text-shadow: none;
+        text-decoration: none;
+        }
+
+    .navbar-inverse .navbar-nav>li>a:hover {
+        color: #212121;
+        }
+
+    .container {
+      background-color: #ffffff;
+    }
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse button {
+    margin-left: 40px;
+}
+
+
+/* Buttons */
+
+    button {
+        background-color: #F64C3F;
+        color: #ffffff;
+        height: 44px; 
+        border: 3px solid white;
+        border-radius: 0px;
+        font-family: 'Inconsolata';
+        font-size: 17px;
+        padding: 6px 20px 10px;
+    }
+
+    button:hover {
+        background-color: #212121;
+    }
+
+/* Links */
+
+    a:link {
+        cursor: pointer;
+        color: #F64C3F;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #212121;
+    }
+
+
+    ul li a {
+        color: #F64C3F;
+        text-decoration: underline;
+        }
+
+    li a:hover {
+        color: #212121;
+        }
+
+    .task a {
+        color: #FFFFFF;
+    }
+
+    .task a:hover {
+        color: #000000;
+    }
+
+    .whats-css a {
+        color: #F64C3F; 
+        cursor: pointer;
+        text-decoration: none;  
+    }
+
+    .whats-css a:hover {
+        color: #000000;
+        text-decoration: none;  
+    }   
+
+
+
+/* Content */
+    .intro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .intro h1 {
+        padding-bottom: 20px;
+
+    }
+
+    .page-block, .page-block-classes  {
+        position: relative;
+        margin: auto;
+        max-width: 700px;
+        }   
+ 
+    .page-block-classes button {
+        margin-top: 20px;
+        }
+
+    .session0, .session1, .session2, .session3, .session4, .session5, .session6, .session7 {
+        background-color: #ffffff;
+        border-bottom: 2px #f2f2f2 solid;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+
+    .session8 {
+        background-color: #ffffff;
+        padding-top: 60px;
+        padding-bottom: 120px;
+        }
+
+    .class-page-block  {
+        position: relative;
+        margin: auto;
+        max-width: 700px;
+        border-top: 2px #f2f2f2 solid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+
+
+    .class-example {
+        position: relative;
+        margin: auto;
+        max-width: 700px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    .tab1 p {
+        position: relative;
+        margin: auto;
+        max-width: 700px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .tab2 p {
+        position: relative;
+        margin: auto;
+        max-width: 700px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+
+    .tab3 p {
+        position: relative;
+        margin: auto;
+        max-width: 700px;
+        padding-left: 70px;
+        padding-bottom: 20px;
+    }
+
+
+
+/* Events */
+
+    .col-sm-4 {
+        padding: 25px;
+    }
+
+    p.title {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .events{
+        background-color: #ffffff;
+        padding-bottom: 40px;
+    }
+
+    .row {
+        max-width: 1060px;
+        margin: auto;
+    }
+
+/* Examples */
+
+    .class-example p {
+        color: #FFFFFF;
+        line-height: 100%;
+        font-size: 15px;  
+
+    }
+    .class-example {
+        background-color: #F64C3F
+    }
+    
+
+/* Footer */
+
+    .footer {
+        background-color: #F64C3F;
+        min-height: 300px;
+        padding: 50px;
+        }
+
+    .footer p {
+        color: #ffffff;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+
+    .input {
+    background-color: #ffffff;
+    max-width: 500px;
+    color: #000000;
+    padding: 10px 20px 12px;
+    font-size: 14px;
+    border-radius: 0px;
+    border: 0px;
+    }
+
+    .socialicons a {
+    color: #ffffff;
+    margin-left: 20px;
+    }
+
+    .socialicons a:hover {
+    opacity: 50%;
+    }
+
+
+    .form-control {
+    max-width: 500px;
+    height: 44px;
+    border-radius: 0px;
+    border: none;
+    margin-right: 20px;
+    }
+
+    .input-group {
+    display: inline-block;
+    font-family: 'Inconsolata';
+}
